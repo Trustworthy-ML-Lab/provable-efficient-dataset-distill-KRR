@@ -1,0 +1,15 @@
+data:
+#  dataset: MNIST
+  dataset: CIFAR100
+  zca_whiten: False
+  gpu: 0
+
+model:
+  seed: 0
+  hidden_layer: 1
+
+distill:
+  IPC: 1
+  kernel: identity
+  generate_from_real_data: False
+  reg_s: False
