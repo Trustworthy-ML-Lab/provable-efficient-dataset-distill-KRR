@@ -1,21 +1,16 @@
 # Provable and Efficient Dataset Distillation for Kernel Ridge Regression
 This is the official repository for the paper ["Provable and Efficient Dataset Distillation for Kernel Ridge Regression"](https://openreview.net/pdf?id=WI2VpcBdnd), NeurIPS 2024.
 
-Deep learning models are now trained on increasingly larger datasets, making it
-crucial to reduce computational costs and improve data quality. Dataset distillation
-aims to distill a large dataset into a small synthesized dataset such that models
-trained on it can achieve similar performance to those trained on the original
-dataset. While there have been many empirical efforts to improve dataset distillation
-algorithms, a thorough theoretical analysis and provable, efficient algorithms are
-still lacking. In this paper, by focusing on dataset distillation for kernel ridge
+In this paper, by focusing on dataset distillation for kernel ridge
 regression (KRR), we show that one data point per class is already necessary and
-sufficient to recover the original model’s performance in many settings. For linear
-ridge regression and KRR with surjective feature mappings, we provide necessary
+sufficient to recover the original model’s performance in many settings. 
+- For linear ridge regression and KRR with surjective feature mappings, we provide necessary
 and sufficient conditions for the distilled dataset to recover the original model’s
-parameters. For KRR with injective feature mappings of deep neural networks, we
+parameters. 
+- For KRR with injective feature mappings of deep neural networks, we
 show that while one data point per class is not sufficient in general, k+1 data points
 can be sufficient for deep linear neural networks, where k is the number of classes.
-Our theoretical results enable directly constructing analytical solutions for distilled
+- Our theoretical results enable directly constructing analytical solutions for distilled
 datasets, resulting in a provable and efficient dataset distillation algorithm for KRR.
 We verify our theory experimentally and show that our algorithm outperforms
 previous work such as KIP while being significantly more efficient, e.g. 15840×
